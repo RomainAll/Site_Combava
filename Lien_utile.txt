@@ -1,0 +1,12 @@
+Charte graphique : https://www.printmag.com/post/davids-lemonade-brandade-5-cents
+Liste évènements : https://docs.google.com/document/d/1_O7Mv77PZsYEiZ9L9VsFsELY1amO_5Rvil1yO-4UuaQ/edit
+Banque Photo : https://audreytips.com/18-sites-photos-gratuites-libres-droit-usage-commercial/
+Compresser Photo: https://tinypng.com/
+Font : https://www.dafont.com/fr/kindergarten4.font
+Travail Contenu du texte : https://www.markentive.com/fr/blog/5-exemples-de-magnifiques-landing-pages-qui-sauront-vous-inspirer
+			https://www.impactplus.com/blog/landing-page-examples
+Réseaux Sociaux :
+Framework : https://github.com/Mimyka/Rex
+	    https://www.knacss.com/
+	    https://picturepan2.github.io/spectre/
+
