@@ -56,7 +56,6 @@ body>nav{
 }
 
 header, footer{
-	background-color: rgb(232, 241, 144);
 	color: black;
 	background-image: url(./media/Image\ obligatoire.webp);
 }
@@ -85,6 +84,7 @@ nav{
 	border-bottom: solid 2px rgb(0, 0, 0);
 	width: calc(100% - 400px);
 	text-align: right;
+	font-family: kindergarten;
 }
 
 nav>ul>li{
