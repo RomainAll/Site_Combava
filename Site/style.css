@@ -76,7 +76,9 @@ main{
 	background-color: #FDFADD;
 	color: #000;
 	width: 60%;
-	margin: auto
+	margin: auto;
+	/* pas obligé de mettre les bords arondi */
+	border-radius: 15px
 }
 
 header>div, main>div, footer>div{
@@ -86,7 +88,7 @@ header>div, main>div, footer>div{
 }
 
 header img{
-	width: 100px;
+	width: 150px;
 }
 
 nav{
@@ -108,10 +110,47 @@ nav>ul>li{
 
 main>div{
 	padding-top: 30px;
-	text-align: justify;
+	padding-bottom: 30px;
 }
 
 div p{
 	text-align: center;
 	font-size: 40px;
+	padding-bottom: 30px;
+}
+#divPresentation{
+	text-align: justify;
+}
+
+#imgPresentation{
+	float: left;
+	width: 40%;
+	margin-right: 20px;
+	border: solid 4px orange;
+	border-radius: 15px
+	
+}
+
+#divEvenement>article>ul>ul>li{
+	padding-left: 30px;
+}
+
+#divEvenement>article>ul>ul{
+	padding-bottom: 30px;
+}
+
+
+#map{
+	float: right;
+}
+
+iframe{
+	border: solid 4px orange;
+	border-radius: 15px
+}
+
+#ecriture{
+	
+	float: left;
+	padding-right: 110px;
 }
