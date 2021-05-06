@@ -108,6 +108,25 @@ nav>ul>li{
 	font-weight: bold;
 }
 
+nav>ul>li>ul>li>a, nav>ul>li>a, footer>div>a {
+	text-decoration: none;
+	color: #000;
+	width: 100%;
+}
+
+nav>ul>li>ul{
+	display: none;
+	position: absolute;
+	background-color: #FDFADD;
+}
+
+nav>ul>li:hover>ul{
+	display: block;
+	text-align: center;
+	border: solid 1px black;
+	width: 239px;
+}
+
 main>div{
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -153,4 +172,56 @@ iframe{
 	
 	float: left;
 	padding-right: 110px;
+}
+
+#imgTransition{
+	width:100%;
+}
+
+#tel, #prénom, #check{
+	float:right;
+}
+
+#email, #tel, #nom, #prénom, #choixEvent, #check{
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+
+input{
+	height:20px;
+}
+
+#button{
+	display:block;
+	margin-top: 30px;
+	margin-left: 42%;
+	margin-right: 45%;
+	padding-left:40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size:medium;
+	font-family: 'kindergarten';
+}
+
+#logo{
+	height: 50px;
+	width: 50px;
+}
+
+#logoT{
+	width:50px;
+}
+
+footer>div{
+	margin-left: 21%;
+}
+
+footer>div>a>img{
+	margin-right:20px;
+}
+
+footer>div>a>p{
+	font-size: 30px;
+	margin-left: 70%;
 }
