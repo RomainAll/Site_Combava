@@ -73,7 +73,7 @@ footer{
 }
 
 main{
-	background-color: #FDFADD;
+	background-color: #faed27;
 	color: #000;
 	width: 60%;
 	margin: auto;
@@ -117,7 +117,7 @@ nav>ul>li>ul>li>a, nav>ul>li>a, footer>div>a {
 nav>ul>li>ul{
 	display: none;
 	position: absolute;
-	background-color: #FDFADD;
+	background-color: #faed27;
 }
 
 nav>ul>li:hover>ul{
@@ -224,4 +224,8 @@ footer>div>a>img{
 footer>div>a>p{
 	font-size: 30px;
 	margin-left: 70%;
+}
+select{
+	width:175px;
+	height: 26px;
 }
