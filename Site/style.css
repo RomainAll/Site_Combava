@@ -149,6 +149,14 @@ div p{
 	border-radius: 15px
 	
 }
+#citronnade{
+	padding-top: 30px;
+}
+h2{
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
 
 .evenements>li{
 	padding-left: 30px;
@@ -161,14 +169,14 @@ div p{
 
 iframe{
 	border: solid 4px orange;
-	border-radius: 15px
+	border-radius: 15px;
+	float: right;
 }
 
-#ecriture{
-	
+#mesEvenements{
 	float: left;
-	padding-right: 110px;
 }
+
 
 #imgTransition{
 	width:100%;
@@ -181,10 +189,12 @@ iframe{
 #email, #tel, #nom, #prénom, #choixEvent, #check{
 	margin-bottom: 40px;
 	font-size: 20px;
+	
 }
 
 input{
 	height:20px;
+	border-radius: 15px;
 }
 
 #button{
@@ -198,6 +208,8 @@ input{
 	padding-bottom: 5px;
 	font-size:medium;
 	font-family: 'kindergarten';
+	background-color:orange;
+	border-radius: 15px;
 }
 
 #logo{
@@ -224,6 +236,8 @@ footer>div>a>p{
 select{
 	width:175px;
 	height: 26px;
+	border-radius: 15px;
+	border:solid 2px black;
 }
 
 /* #imgPresentation,iframe {

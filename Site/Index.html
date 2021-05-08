@@ -35,56 +35,73 @@
 				<p>Présentation :</p>
 				<br>
 				<img src="./media/davidsPresentation0.jpg" alt="image présentation" id="imgPresentation">
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat sagittis rhoncus. Aliquam faucibus arcu a dolor fermentum, id ullamcorper purus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse volutpat facilisis mauris sit amet tincidunt. Nullam eu lacus condimentum, lacinia elit a, efficitur ligula. Suspendisse eget lorem ut sem mollis tincidunt. In hac habitasse platea dictumst. Maecenas quis quam a eros suscipit pharetra. Donec aliquet, diam eu feugiat viverra, massa ligula condimentum ex, sed malesuada urna lacus eget ligula. Donec in elementum diam. Fusce metus ligula, consectetur at sapien nec, interdum semper enim. Pellentesque mollis nulla in eleifend aliquam.
 
-					Pellentesque dapibus arcu at purus vulputate, accumsan scelerisque sem pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra risus et sem rutrum, in laoreet lectus convallis. Phasellus lacinia vestibulum nisl a interdum. Morbi erat dolor, tincidunt in augue id, egestas molestie justo. In hac habitasse.
+				<span>
+					<h2>Notre association</h2>
+					Pour la petite histoire : dans les années 50 aux USA, les enfants montaient des stands de citronnade maison devant chez eux, afin de récolter un peu d'argent de poche. 
+					Une entreprise de l'époque, "David's Lemonade", a repris l'idée et répandu le principe de ces stands de citronnade à 5 cents dans tout le pays. Malgré son énorme succès, 70 ans après, elle a aujourd'hui disparu.
+					L'association Combava, qui regroupe des producteurs indépendants d'agrumes du sud de la France, cherche une façon de se faire connaître, tant auprès des magasins que des clients. 
+					Pour cela, elle a eu l'idée d'organiser des dégustations privées, "VIP", de citronnade dans tout le pays, comme font les négociants de vin. 
+					En guise de clin d'œil, Combava a eu l'autorisation d'utiliser le nom et l'identité graphique de "David's Lemonade", afin de bénéficier d'une aura old school, en cohérence avec ses valeurs et à l'opposé des grandes chaînes de boissons américaines. 
 				</span>
+				<br>
+				<div id="citronnade">
+					<h2>Notre citronnade</h2>
+					<span>La citronnade est une boisson saine, mettant en avant le goût unique des différents agrumes frais et bio de production locale. C’est un produit naturel tout à fait dans l'air du temps. De plus, les producteurs adhérents seront présents lors des dégustations pour défendre la qualité de leurs produits.</span>
+				</div>
+				
 			</div>
 			<div id="divEvenement">
 				<p>Liste Evènements :</p>
-				<article id="ecriture">
-					<scroll-container>
+				<article id="mesEvenements">
 						<ul>
+						<h2>Lieux de dégustation</h2>
 						<ul class="evenements">
 							<scroll-page id="evenement1"></scroll-page>
-							<span>Bafodé le bg</span>
-							<li>Présentation</li>
-							<li>Liste Evenement</li>
-							<li>Formulaire</li>
-							<li>Cambava.com</li>
+							<span>AMAP les Grand’Goules</span>
+							<li>3 Rue des Gravières</li>
+							<li>86000 Grand Poitiers</li>
 						</ul>
 					
 						<ul class="evenements">
 							<scroll-page id="evenement2"></scroll-page>
-							<span>Bafodé le bg</span>
-							<li>Présentation</li>
-							<li>Liste Evenement</li>
-							<li>Formulaire</li>
-							<li>Cambava.com</li>
+							<span>AMAP Bio des 2 rives</span>
+							<li>1 Rue des Écoles</li>
+							<li>37150 Civray-de-Touraine</li>
 						</ul>
 
 						<ul class="evenements">
 							<scroll-page id="evenement3"></scroll-page>
-							<span>Bafodé le bg</span>
-							<li>Présentation</li>
-							<li>Liste Evenement</li>
-							<li>Formulaire</li>
-							<li>Cambava.com</li>
+							<span>Amap des Voiliers</span>
+							<li>21 Avenue du Champ de Mars</li>
+							<li>17000 La Rochelle</li>
 						</ul>
 						
 						<ul class="evenements">
 							<scroll-page id="evenement4"></scroll-page>
-							<span>Bafodé le bg</span>
-							<li>Présentation</li>
-							<li>Liste Evenement</li>
-							<li>Formulaire</li>
-							<li>Cambava.com</li>
+							<span>Le Pompin'Ambour</span>
+							<li>37 Lotissement Parc de Cadouin</li>
+							<li>33370 Pompignac</li>
 						</ul>
-					</scroll-container>
-				</ul>
+
+						<ul class="evenements">
+							<scroll-page id="evenement4"></scroll-page>
+							<span>AMAP BIO’RILLAC</span>
+							<li>27 Rue Antonin Dusserre</li>
+							<li>15130 Arpajon-sur-Cère</li>
+						</ul>
+
+						<ul class="evenements">
+							<scroll-page id="evenement4"></scroll-page>
+							<span>AMAP</span>
+							<li>13 Rue du Chéry</li>
+							<li>63350 Maringues</li>
+						</ul>
+						</ul>
+
 				</article>
-				<article id="carte">
-					<div id="map">
+				<article>
+					<div>
 						<iframe src="https://www.google.com/maps/d/embed?mid=1POpDbW8Ln95j4xbjc7oRZZQ5QUMbhoqa&hl=fr" width="59%" height="480"></iframe>
 					</div>
 				</article>
@@ -122,8 +139,6 @@
 
 						<div id="choixEvent">
 							<label for="choix-evenement">Evenement :</label>
-							<!-- <input list="choix-evenement-list" id="choix-evenement" name="choix-evenement" /> -->
-
 							<select id="choix-evenement-list">
 								<option value="Evènement 1">Evènement 1</option>
 								<option value="Evènement 2">Evènement 2</option>
