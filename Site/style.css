@@ -81,7 +81,7 @@ main{
 	border-radius: 15px
 }
 
-header>div, main>div, footer>div{
+header>div, main>scroll-container>div, footer>div{
 	width: 80%;
 	max-width: 1200px;
 	margin: auto;
@@ -127,7 +127,7 @@ nav>ul>li:hover>ul{
 	width: 239px;
 }
 
-main>div{
+main>scroll-container>div{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -150,18 +150,14 @@ div p{
 	
 }
 
-#divEvenement>article>ul>ul>li{
+.evenements>li{
 	padding-left: 30px;
 }
 
-#divEvenement>article>ul>ul{
+.evenements{
 	padding-bottom: 30px;
 }
 
-
-#map{
-	float: right;
-}
 
 iframe{
 	border: solid 4px orange;
@@ -229,3 +225,10 @@ select{
 	width:175px;
 	height: 26px;
 }
+
+/* #imgPresentation,iframe {
+	border: solid 5px orange;
+	transition: border-width 0.6s linear;
+  }
+  
+#imgPresentation:hover,iframe:hover { border-width: 10px; } */

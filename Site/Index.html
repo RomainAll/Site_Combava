@@ -12,128 +12,138 @@
 			<img src="./media/logoDavids.png" alt="logo">
 			<nav>
 				<ul>
-					<li>Présentation</li><!--
+					<li> <a href="#presentation">Présentation</a></li><!--
 				 --><li>Liste Evenement
 						<ul>
-							<li><a href="#">Evenement 1</a></li>
-							<li><a href="#">Evenement 2</a></li>
-							<li><a href="#">Evenement 3</a></li>
-							<li><a href="#">Evenement 4</a></li>
+							<li><a href="#evenement1">Evenement 1</a></li>
+							<li><a href="#evenement2">Evenement 2</a></li>
+							<li><a href="#evenement3">Evenement 3</a></li>
+							<li><a href="#evenement4">Evenement 4</a></li>
 						</ul>
 					</li><!--
-				 --><li>Formulaire</li><!--
-				 --><li><a href="#">Combava.com</a></li>
+				 --><li><a href="#formulaire">Formulaire</a></li><!--
+				 --><li><a href="http://combava.com/">Combava.com</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 	<main>
-		<div id="divPresentation">
-			<p>Présentation :</p>
-			<br>
-			<img src="./media/Image présentation.jpg" alt="image présentation" id="imgPresentation">
-			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat sagittis rhoncus. Aliquam faucibus arcu a dolor fermentum, id ullamcorper purus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse volutpat facilisis mauris sit amet tincidunt. Nullam eu lacus condimentum, lacinia elit a, efficitur ligula. Suspendisse eget lorem ut sem mollis tincidunt. In hac habitasse platea dictumst. Maecenas quis quam a eros suscipit pharetra. Donec aliquet, diam eu feugiat viverra, massa ligula condimentum ex, sed malesuada urna lacus eget ligula. Donec in elementum diam. Fusce metus ligula, consectetur at sapien nec, interdum semper enim. Pellentesque mollis nulla in eleifend aliquam.
+		<scroll-container>
+			<div id="divPresentation">
+					<scroll-page id="presentation"></scroll-page>
+				<p>Présentation :</p>
+				<br>
+				<img src="./media/Image présentation.jpg" alt="image présentation" id="imgPresentation">
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat sagittis rhoncus. Aliquam faucibus arcu a dolor fermentum, id ullamcorper purus fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse volutpat facilisis mauris sit amet tincidunt. Nullam eu lacus condimentum, lacinia elit a, efficitur ligula. Suspendisse eget lorem ut sem mollis tincidunt. In hac habitasse platea dictumst. Maecenas quis quam a eros suscipit pharetra. Donec aliquet, diam eu feugiat viverra, massa ligula condimentum ex, sed malesuada urna lacus eget ligula. Donec in elementum diam. Fusce metus ligula, consectetur at sapien nec, interdum semper enim. Pellentesque mollis nulla in eleifend aliquam.
 
-				Pellentesque dapibus arcu at purus vulputate, accumsan scelerisque sem pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra risus et sem rutrum, in laoreet lectus convallis. Phasellus lacinia vestibulum nisl a interdum. Morbi erat dolor, tincidunt in augue id, egestas molestie justo. In hac habitasse.
-			</span>
-		</div>
-		<div id="divEvenement">
-			<p>Liste Evènements :</p>
-			<article id="ecriture">
-				<ul>
-				<ul>
-					<span>Bafodé le bg</span>
-					<li>Présentation</li>
-					<li>Liste Evenement</li>
-					<li>Formulaire</li>
-					<li>Cambava.com</li>
-				</ul>
-			
-				<ul>
-					<span>Bafodé le bg</span>
-					<li>Présentation</li>
-					<li>Liste Evenement</li>
-					<li>Formulaire</li>
-					<li>Cambava.com</li>
-				</ul>
-
-				<ul>
-					<span>Bafodé le bg</span>
-					<li>Présentation</li>
-					<li>Liste Evenement</li>
-					<li>Formulaire</li>
-					<li>Cambava.com</li>
-				</ul>
-				
-				<ul>
-					<span>Bafodé le bg</span>
-					<li>Présentation</li>
-					<li>Liste Evenement</li>
-					<li>Formulaire</li>
-					<li>Cambava.com</li>
-				</ul>
-			</ul>
-			</article>
-			<article id="carte">
-				<div class="map">
-					<iframe src="https://www.google.com/maps/d/embed?mid=1POpDbW8Ln95j4xbjc7oRZZQ5QUMbhoqa&hl=fr" width="59%" height="480"></iframe>
-				</div>
-			</article>
-		</div>
-		<img src="./media/Image obligatoire .png" alt="Image transition." id="imgTransition">
-		<div id="formulaire">
-			<p>Formulaire d'inscription :</p>
-			<div id="container">
-				<form>
-					<div id="tel">
-						<label for="telephone">Téléphone :</label>
-						<input type="telephone" id="telephone" name="user_tel">
-					</div>
-
-					<div id="email">
-						<label for="mail">Mail :</label>
-						<input type="email" id="mail" name="user_mail">
-					</div>
-
-					<div id="prénom">
-						<label for="prenom">Prénom :</label>
-						<input type="text" id="prenom" name="user_forname">
-					</div>
-
-					<div id="nom">
-						<label for="name">Nom :</label>
-						<input type="text" id="name" name="user_name">
-					</div>
-					
-					<div id="check">
-						<input type="checkbox" id="autorisation" name="autorisation">
-						<label for="autorisation">Autorisation Information</label>
-					</div>
-
-					<div id="choixEvent">
-						<label for="choix-evenement">Evenement :</label>
-						<!-- <input list="choix-evenement-list" id="choix-evenement" name="choix-evenement" /> -->
-
-						<select id="choix-evenement-list">
-							<option value="Evènement 1">Evènement 1</option>
-							<option value="Evènement 2">Evènement 2</option>
-							<option value="Evènement 3">Evènement 3</option>
-							<option value="Evènement 4">Evènement 4</option>
-						</select>
-					</div>
-				</form>
+					Pellentesque dapibus arcu at purus vulputate, accumsan scelerisque sem pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra risus et sem rutrum, in laoreet lectus convallis. Phasellus lacinia vestibulum nisl a interdum. Morbi erat dolor, tincidunt in augue id, egestas molestie justo. In hac habitasse.
+				</span>
 			</div>
-			<button id="button" type="submit" onclick="self.location.href='index.html'">Envoyer</button>
-		</div>
+			<div id="divEvenement">
+				<p>Liste Evènements :</p>
+				<article id="ecriture">
+					<scroll-container>
+						<ul>
+						<ul class="evenements">
+							<scroll-page id="evenement1"></scroll-page>
+							<span>Bafodé le bg</span>
+							<li>Présentation</li>
+							<li>Liste Evenement</li>
+							<li>Formulaire</li>
+							<li>Cambava.com</li>
+						</ul>
+					
+						<ul class="evenements">
+							<scroll-page id="evenement2"></scroll-page>
+							<span>Bafodé le bg</span>
+							<li>Présentation</li>
+							<li>Liste Evenement</li>
+							<li>Formulaire</li>
+							<li>Cambava.com</li>
+						</ul>
+
+						<ul class="evenements">
+							<scroll-page id="evenement3"></scroll-page>
+							<span>Bafodé le bg</span>
+							<li>Présentation</li>
+							<li>Liste Evenement</li>
+							<li>Formulaire</li>
+							<li>Cambava.com</li>
+						</ul>
+						
+						<ul class="evenements">
+							<scroll-page id="evenement4"></scroll-page>
+							<span>Bafodé le bg</span>
+							<li>Présentation</li>
+							<li>Liste Evenement</li>
+							<li>Formulaire</li>
+							<li>Cambava.com</li>
+						</ul>
+					</scroll-container>
+				</ul>
+				</article>
+				<article id="carte">
+					<div id="map">
+						<iframe src="https://www.google.com/maps/d/embed?mid=1POpDbW8Ln95j4xbjc7oRZZQ5QUMbhoqa&hl=fr" width="59%" height="480"></iframe>
+					</div>
+				</article>
+			</div>
+			<img src="./media/Image obligatoire .png" alt="Image transition." id="imgTransition">
+			<div id="formulaire">
+				<scroll-page id="formulaire"></scroll-page>
+				<p>Formulaire d'inscription :</p>
+				<div id="container">
+					<form>
+						<div id="tel">
+							<label for="telephone">Téléphone :</label>
+							<input type="telephone" id="telephone" name="user_tel">
+						</div>
+
+						<div id="email">
+							<label for="mail">Mail :</label>
+							<input type="email" id="mail" name="user_mail">
+						</div>
+
+						<div id="prénom">
+							<label for="prenom">Prénom :</label>
+							<input type="text" id="prenom" name="user_forname">
+						</div>
+
+						<div id="nom">
+							<label for="name">Nom :</label>
+							<input type="text" id="name" name="user_name">
+						</div>
+						
+						<div id="check">
+							<input type="checkbox" id="autorisation" name="autorisation">
+							<label for="autorisation">Autorisation Information</label>
+						</div>
+
+						<div id="choixEvent">
+							<label for="choix-evenement">Evenement :</label>
+							<!-- <input list="choix-evenement-list" id="choix-evenement" name="choix-evenement" /> -->
+
+							<select id="choix-evenement-list">
+								<option value="Evènement 1">Evènement 1</option>
+								<option value="Evènement 2">Evènement 2</option>
+								<option value="Evènement 3">Evènement 3</option>
+								<option value="Evènement 4">Evènement 4</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<button id="button" type="submit" onclick="self.location.href='index.html'">Envoyer</button>
+			</div>
+		</scroll-container>
     </main>
 
 	<footer>
 		<div id="foot">
-			<a href="#"><img src="./media/Logo_Facebook.png" alt="logo facebook" id="logo"></a>
-			<a href="#"><img src="./media/Logo_Insta.png" alt="logo insta" id="logo"></a>
-			<a href="#"><img src="./media/logo_Twitter.png" alt="logo twitter" id="logoT"></a>
-			<a href="#"><p>Combawa.com</p></a>
+			<a href="https://facebook.com/"><img src="./media/Logo_Facebook.png" alt="logo facebook" id="logo"></a>
+			<a href="https://instagram.com/"><img src="./media/Logo_Insta.png" alt="logo insta" id="logo"></a>
+			<a href="https://twitter.com/"><img src="./media/logo_Twitter.png" alt="logo twitter" id="logoT"></a>
+			<a href="http://combava.com/"><p>Combawa.com</p></a>
 		</div>
 	</footer>
 </body>
