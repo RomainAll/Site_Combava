@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/*Code CSS Custom*/
+/*---------------------------------------------------------------------Code CSS Custom PC---------------------------------------------------------------------*/
 
 body{
 	font-family: 'kindergarten',cursive;
@@ -221,10 +221,7 @@ form{
 	display: flex;
 	justify-content:space-between;
 }
-/* #prénom,#tel,#check{
-	float:right;
-}
-*/
+
 #email, #tel, #nom, #prénom, #choixEvent, #check{
 	margin-bottom: 40px;
 	font-size: 20px;
@@ -283,7 +280,7 @@ select{
 	border-radius: 15px;
 	border:solid 2px black;
 }
-
+/*---------------------------------------------------------------------Telephone---------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 
 	#imageEtHistoire{
@@ -312,7 +309,7 @@ select{
 		height: 100%;
 	}
 	#mesEvenements{
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 	
 	#autresEvenements{
@@ -359,7 +356,7 @@ select{
 	}
 
 }
-
+/*---------------------------------------------------------------------Tablette---------------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width: 1280px){
 
 	#imageEtHistoire{
