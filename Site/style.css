@@ -49,7 +49,6 @@ table {
 
 /*Code CSS Custom*/
 
-
 body{
 	font-family: 'kindergarten',cursive;
 	background-image: url(./media/fond.jpg);
@@ -77,7 +76,6 @@ main{
 	color: #000;
 	width: 60%;
 	margin: auto;
-	/* pas obligé de mettre les bords arondi */
 	border-radius: 15px
 }
 
@@ -118,6 +116,7 @@ nav>ul>li>ul{
 	display: none;
 	position: absolute;
 	background-color: #faed27;
+	font-size: 20px;
 }
 
 nav>ul>li:hover>ul{
@@ -132,46 +131,73 @@ main>scroll-container>div{
 	padding-bottom: 30px;
 }
 
-div p{
+div h1{
 	text-align: center;
 	font-size: 40px;
 	padding-bottom: 30px;
 }
+
 #divPresentation{
 	text-align: justify;
 }
 
 #imgPresentation{
-	float: left;
 	width: 40%;
 	margin-right: 20px;
 	border: solid 4px orange;
-	border-radius: 15px
-	
+	border-radius: 15px;
+	display:flex;
+	flex-direction: column;
 }
+
+#imageEtHistoire{
+	display:flex;
+	align-items:center;
+}
+
+
 #citronnade{
 	padding-top: 30px;
+	padding-bottom: 30px
+	
 }
+
+
 h2{
 	font-size: 20px;
 	padding-bottom: 10px;
 	text-decoration: underline;
 }
 
-.evenements>li{
+
+#evenementEtCarte{
+	display: flex;
+	justify-content:space-between;
+}
+
+.sousItems{
 	padding-left: 30px;
 }
 
 .evenements{
 	padding-bottom: 30px;
+	
 }
+#autresEvenements{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
 
+}
 
 iframe{
 	border: solid 4px orange;
 	border-radius: 15px;
-	float: right;
+	width: 600px;
+	height: 500px;
 }
+
 
 #mesEvenements{
 	float: left;
@@ -212,7 +238,7 @@ input{
 	border-radius: 15px;
 }
 
-#logo{
+.logoFbEtInsta{
 	height: 50px;
 	width: 50px;
 }
@@ -239,10 +265,3 @@ select{
 	border-radius: 15px;
 	border:solid 2px black;
 }
-
-/* #imgPresentation,iframe {
-	border: solid 5px orange;
-	transition: border-width 0.6s linear;
-  }
-  
-#imgPresentation:hover,iframe:hover { border-width: 10px; } */

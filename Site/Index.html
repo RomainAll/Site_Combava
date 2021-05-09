@@ -5,6 +5,7 @@
 	<title>Dégustation de limonade</title>
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./style-mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
@@ -15,13 +16,12 @@
 					<li> <a href="#presentation">Présentation</a></li><!--
 				 --><li>Liste Evenement
 						<ul>
-							<li><a href="#evenement1">Evenement 1</a></li>
-							<li><a href="#evenement2">Evenement 2</a></li>
-							<li><a href="#evenement3">Evenement 3</a></li>
-							<li><a href="#evenement4">Evenement 4</a></li>
+							<li><a href="#lieu">Lieux de dégustation</a></li>
+							<li><a href="#map">Carte des évenements</a></li>
+							<li><a href="#autres">Plus de lieux</a></li>
 						</ul>
 					</li><!--
-				 --><li><a href="#formulaire">Formulaire</a></li><!--
+				 --><li><a href="#leFormulaire">Formulaire</a></li><!--
 				 --><li><a href="http://combava.com/">Combava.com</a></li>
 				</ul>
 			</nav>
@@ -31,92 +31,157 @@
 	<main>
 		<scroll-container>
 			<div id="divPresentation">
-					<scroll-page id="presentation"></scroll-page>
-				<p>Présentation :</p>
+				<scroll-page id="presentation"></scroll-page>
+				<h1>Présentation :</h1>
 				<br>
-				<img src="./media/davidsPresentation0.jpg" alt="image présentation" id="imgPresentation">
+				<article id="imageEtHistoire">
+					<img src="./media/davidsPresentation0.jpg" alt="image présentation" id="imgPresentation">
 
-				<span>
-					<h2>L'histoire de la limonade</h2>
-					Dans les années 50, les enfants des états unis vendaient de la limonade faites maison pour 5 cents sur des stands devant chez eux pour se faire un peu d'argent de poche. 
-					Donc à cette époque une entreprise appelée « David’s Lemonade » s'est inspiré de cette tradition pour la répandre dans tout le pays, et celle-ci a rencontré un franc succès. 
-					Mais malheureusement de nos jours cette entreprise a disparu. 
-				</span>
-				<br>
-				<div id="citronnade">
-					<h2>Notre association</h2>
-					<span>Combava regroupe différents producteurs d'agrumes tous indépendants et venants du sud de la France. 
-						Notre citronnade a pour but d'être une boisson saine qui permet avant tout de mettre en avant le goût de nos agrumes frais et bio que nous produisons localement, à l'instar de « David’s Lemonade » nous souhaitons promouvoir le fait-maison et le bio que nous ne nous retrouvons malheureusement pas dans les grandes chaînes de boissons. 
-						C’est donc pour vous faire découvrir notre boisson que nous avons décidé d'organiser des dégustations privées autour de tout le pays, lors de celle-ci nos producteurs adhérents seront présents pour vous présenter leurs produits et défendre leurs qualités. 
-						Si vous êtes un magasin à la recherche de producteurs ou alors juste une personne à la recherche de bons produits n'hésitez pas à venir vous inscrire pour une de nos dégustations chez nos magasins partenaires ou des associations locales. 
-						Vous trouverez toutes les informations nécessaires ci-dessous, et si vous souhaitez plus d'informations sur notre association n'hésitez pas à aller voir notre site Combava.com</span>
-				</div>
+					<section>
+						<h2>L'histoire de la limonade</h2>
+						<span>
+							Dans les années 50, les enfants des états unis vendaient de la limonade faites maison pour 5 cents sur des stands devant chez eux pour se faire un peu d'argent de poche. 
+							Donc à cette époque une entreprise appelée « David’s Lemonade » s'est inspiré de cette tradition pour la répandre dans tout le pays, et celle-ci a rencontré un franc succès. 
+							Mais malheureusement de nos jours cette entreprise a disparu. 
+						</span>
+					</section>
+				</article>
+
+				<article id="citronnade">
+					<div>
+						<h2>Notre association</h2>
+						<span>Combava regroupe différents producteurs d'agrumes tous indépendants et venants du sud de la France. 
+							Notre citronnade a pour but d'être une boisson saine qui permet avant tout de mettre en avant le goût de nos agrumes frais et bio que nous produisons localement, à l'instar de « David’s Lemonade » nous souhaitons promouvoir le fait-maison et le bio que nous ne nous retrouvons malheureusement pas dans les grandes chaînes de boissons. 
+							C’est donc pour vous faire découvrir notre boisson que nous avons décidé d'organiser des dégustations privées autour de tout le pays, lors de celle-ci nos producteurs adhérents seront présents pour vous présenter leurs produits et défendre leurs qualités. 
+							Si vous êtes un magasin à la recherche de producteurs ou alors juste une personne à la recherche de bons produits n'hésitez pas à venir vous inscrire pour une de nos dégustations chez nos magasins partenaires ou des associations locales. 
+							Vous trouverez toutes les informations nécessaires ci-dessous, et si vous souhaitez plus d'informations sur notre association n'hésitez pas à aller voir notre site Combava.com
+						</span>
+					</div>
+				</article>
 				
 			</div>
 			<div id="divEvenement">
-				<p>Liste Evènements :</p>
-				<article id="mesEvenements">
-						<ul>
+				<h1>Liste Evènements :</h1>
+				<div id="evenementEtCarte">
+					<article id="mesEvenements">
+						<scroll-page id="lieu"></scroll-page>
 						<h2>Lieux de dégustation</h2>
 						<ul class="evenements">
-							<scroll-page id="evenement1"></scroll-page>
-							<span>AMAP les Grand’Goules</span>
-							<li>3 Rue des Gravières</li>
-							<li>86000 Grand Poitiers</li>
+							<li>AMAP les Grand’Goules</li>
+							<li class="sousItems">3 Rue des Gravières</li>
+							<li class="sousItems">86000 Grand Poitiers</li>
 						</ul>
 					
 						<ul class="evenements">
-							<scroll-page id="evenement2"></scroll-page>
-							<span>AMAP Bio des 2 rives</span>
-							<li>1 Rue des Écoles</li>
-							<li>37150 Civray-de-Touraine</li>
+							<li>AMAP Bio des 2 rives</li>
+							<li class="sousItems">1 Rue des Écoles</li>
+							<li class="sousItems">37150 Civray-de-Touraine</li>
 						</ul>
 
 						<ul class="evenements">
-							<scroll-page id="evenement3"></scroll-page>
-							<span>Amap des Voiliers</span>
-							<li>21 Avenue du Champ de Mars</li>
-							<li>17000 La Rochelle</li>
+							<li>Amap des Voiliers</li>
+							<li class="sousItems">21 Avenue du Champ de Mars</li>
+							<li class="sousItems">17000 La Rochelle</li>
 						</ul>
 						
 						<ul class="evenements">
-							<scroll-page id="evenement4"></scroll-page>
-							<span>Le Pompin'Ambour</span>
-							<li>37 Lotissement Parc de Cadouin</li>
-							<li>33370 Pompignac</li>
+							<li>Le Pompin'Ambour</li>
+							<li class="sousItems">37 Lotissement Parc de Cadouin</li>
+							<li class="sousItems">33370 Pompignac</li>
 						</ul>
 
 						<ul class="evenements">
-							<scroll-page id="evenement4"></scroll-page>
-							<span>AMAP BIO’RILLAC</span>
-							<li>27 Rue Antonin Dusserre</li>
-							<li>15130 Arpajon-sur-Cère</li>
+							<li>AMAP BIO’RILLAC</li>
+							<li class="sousItems">27 Rue Antonin Dusserre</li>
+							<li class="sousItems">15130 Arpajon-sur-Cère</li>
 						</ul>
 
 						<ul class="evenements">
-							<scroll-page id="evenement4"></scroll-page>
-							<span>AMAP</span>
-							<li>13 Rue du Chéry</li>
-							<li>63350 Maringues</li>
+							<li>AMAP</li>
+							<li class="sousItems">13 Rue du Chéry</li>
+							<li class="sousItems">63350 Maringues</li>
 						</ul>
+					</article>
+					<article>
+						<div>
+							<scroll-page id="map"></scroll-page>
+							<iframe src="https://www.google.com/maps/d/embed?mid=1POpDbW8Ln95j4xbjc7oRZZQ5QUMbhoqa&hl=fr"></iframe>
+						</div>
+					</article>
+				</div>
+				<div id="autresEvenements">
+					<article>
+						<scroll-page id="autres"></scroll-page>
+						<ul class="evenements">
+							<li>Pensees Bio</li>
+							<li class="sousItems">43 Avenue de la République</li>
+							<li class="sousItems">46130 Biars-sur-Cère</li>
 						</ul>
+	
+						<ul class="evenements">
+							<li>Bio & Sens Montpellier - Juvignac</li>
+							<li class="sousItems">C. Cial Les Portes du Soleil, parking aérien</li>
+							<li class="sousItems"> Allée de l'Europe, 34990 Juvignac</li>
+						</ul>
+	
+						<ul class="evenements">
+							<li>Biossetan</li>
+							<li class="sousItems">4 Rue Paul Cézanne</li>
+							<li class="sousItems">83330 Le Beausset</li>
+						</ul>
+					</article>
 
-				</article>
-				<article>
-					<div>
-						<iframe src="https://www.google.com/maps/d/embed?mid=1POpDbW8Ln95j4xbjc7oRZZQ5QUMbhoqa&hl=fr" width="59%" height="480"></iframe>
-					</div>
-				</article>
+					<article>
+						<ul class="evenements">
+							<li>La Canopée</li>
+							<li class="sousItems">3 Allée de l'Île aux Moineaux</li>
+							<li class="sousItems">25000 Besançon</li>
+						</ul>
+	
+						<ul class="evenements">
+							<li>Naturéo</li>
+							<li class="sousItems">37 Rue Herzog Logelbach</li>
+							<li class="sousItems">68124 Wintzenheim</li>
+						</ul>
+	
+						<ul class="evenements">
+							<li>Rayons Verts</li>
+							<li class="sousItems">45 Cours Briand</li>
+							<li class="sousItems">08000 Charleville-Mézières</li>
+						</ul>
+					</article>
+
+					<article>
+						<ul class="evenements">
+							<li>BIOMONDE</li>
+							<li class="sousItems">14 Rue Saint-Patrice</li>
+							<li class="sousItems">80000 Amiens</li>
+						</ul>
+	
+						<ul class="evenements">
+							<li>Bio c' Bon</li>
+							<li class="sousItems">116 Avenue d'Italie</li>
+							<li class="sousItems">75013 Paris</li>
+						</ul>
+	
+						<ul class="evenements">
+							<li>Les Comptoirs de la Bio</li>
+							<li class="sousItems">4 Avenue de Worms</li>
+							<li class="sousItems">89000 Auxerre</li>
+						</ul>
+					</article>
+				</div>
 			</div>
-			<img src="./media/Image obligatoire .png" alt="Image transition." id="imgTransition">
+
+			<img src="./media/imageObligatoire.png" alt="Image transition." id="imgTransition">
 			<div id="formulaire">
-				<scroll-page id="formulaire"></scroll-page>
-				<p>Formulaire d'inscription :</p>
+				<scroll-page id="leFormulaire"></scroll-page>
+				<h1>Formulaire d'inscription :</h1>
 				<div id="container">
 					<form>
 						<div id="tel">
 							<label for="telephone">Téléphone :</label>
-							<input type="telephone" id="telephone" name="user_tel">
+							<input type="number" id="telephone" name="user_tel">
 						</div>
 
 						<div id="email">
@@ -140,7 +205,7 @@
 						</div>
 
 						<div id="choixEvent">
-							<label for="choix-evenement">Evenement :</label>
+							<label>Evenement :</label>
 							<select id="choix-evenement-list">
 								<option value="Evènement 1">Evènement 1</option>
 								<option value="Evènement 2">Evènement 2</option>
@@ -157,8 +222,8 @@
 
 	<footer>
 		<div id="foot">
-			<a href="https://facebook.com/"><img src="./media/Logo_Facebook.png" alt="logo facebook" id="logo"></a>
-			<a href="https://instagram.com/"><img src="./media/Logo_Insta.png" alt="logo insta" id="logo"></a>
+			<a href="https://facebook.com/"><img src="./media/Logo_Facebook.png" alt="logo facebook" class="logoFbEtInsta"></a>
+			<a href="https://instagram.com/"><img src="./media/Logo_Insta.png" alt="logo insta" class="logoFbEtInsta"></a>
 			<a href="https://twitter.com/"><img src="./media/logo_Twitter.png" alt="logo twitter" id="logoT"></a>
 			<a href="http://combava.com/"><p>Combava.com</p></a>
 		</div>
