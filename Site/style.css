@@ -217,10 +217,14 @@ iframe{
 	width:100%;
 }
 
-#tel, #prénom, #check{
+form{
+	display: flex;
+	justify-content:space-between;
+}
+/* #prénom,#tel,#check{
 	float:right;
 }
-
+*/
 #email, #tel, #nom, #prénom, #choixEvent, #check{
 	margin-bottom: 40px;
 	font-size: 20px;
@@ -260,13 +264,18 @@ footer>div{
 	margin-left: 21%;
 }
 
-footer>div>a>img{
+#reseaux>img{
 	margin-right:20px;
 }
 
 #cambava{
 	font-size: 30px;
 	margin-left: 70%;
+
+}
+#cambava>a{
+	text-decoration: none;
+	color: #000;
 }
 select{
 	width:175px;
@@ -310,15 +319,6 @@ select{
 		display: block;
 	}
 
-	#tel, #prénom, #check{
-		float:left;
-	}
-	
-	#email, #tel, #nom, #prénom, #choixEvent, #check{
-		margin-bottom: 40px;
-		font-size: 20px;
-	}
-	
 	input{
 		margin:auto;
 	}
@@ -329,13 +329,106 @@ select{
 
 	#foot{
 		display:flex;
-		flex-direction:row
+		flex-direction:column;
+		margin:auto;
 	}
+	#reseaux{
+		margin:auto;
+	}
+	#cambava{
+		margin:auto;
+	}
+	#logo{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	h2{
+		text-align:center
+	}
+	main{
+		width: 90%;
+	}
+	form{
+		display:flex;
+		flex-direction:column;
 
-
+	}
+	nav{
+		display: none;
+	}
 
 }
 
-@media screen and (min-width:801px) and (max-width: 1280px){
+@media screen and (min-width:768px) and (max-width: 1280px){
 
+	#imageEtHistoire{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
+
+	#imgPresentation{
+		width: 60%;
+		margin:auto;
+	}
+
+	#histoire{
+		padding-top:10px;
+	}
+
+	#evenementEtCarte{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#carte{
+		border: solid 4px orange;
+		width: 100%;
+		height: 100%;
+	}
+	#mesEvenements{
+		padding-top: 0px;
+	}
+
+	#evenementGauche{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 100%;
+	}
+
+	input{
+		margin:auto;
+	}
+	
+	#button{
+		margin:auto;
+	}
+
+	#foot{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	#reseaux{
+		margin:auto;
+	}
+	#cambava{
+		margin:auto;
+	}
+	#logo{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	h2{
+		text-align:center
+	}
+	main{
+		width: 90%;
+	}
+	nav{
+		display: none;
+	}
 }
