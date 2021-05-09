@@ -394,6 +394,12 @@ select{
 		justify-content:space-between;
 		width: 100%;
 	}
+	#autresEvenements{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 100%;
+	}
 
 	input{
 		margin:auto;
