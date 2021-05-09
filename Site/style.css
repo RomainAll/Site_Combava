@@ -264,7 +264,7 @@ footer>div>a>img{
 	margin-right:20px;
 }
 
-footer>div>a>p{
+#cambava{
 	font-size: 30px;
 	margin-left: 70%;
 }
@@ -273,4 +273,69 @@ select{
 	height: 26px;
 	border-radius: 15px;
 	border:solid 2px black;
+}
+
+@media screen and (max-width: 768px) {
+
+	#imageEtHistoire{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
+
+	#imgPresentation{
+		width: 100%;
+		margin:auto;
+	}
+
+	#histoire{
+		padding-top:10px;
+	}
+
+	#evenementEtCarte{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#carte{
+		border: solid 4px orange;
+		width: 100%;
+		height: 100%;
+	}
+	#mesEvenements{
+		padding-top: 10px;
+	}
+	
+	#autresEvenements{
+		display: block;
+	}
+
+	#tel, #prénom, #check{
+		float:left;
+	}
+	
+	#email, #tel, #nom, #prénom, #choixEvent, #check{
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+	
+	input{
+		margin:auto;
+	}
+	
+	#button{
+		margin:auto;
+	}
+
+	#foot{
+		display:flex;
+		flex-direction:row
+	}
+
+
+
+}
+
+@media screen and (min-width:801px) and (max-width: 1280px){
+
 }

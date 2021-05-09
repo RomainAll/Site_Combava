@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>Dégustation de limonade</title>
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./style-mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -37,7 +36,7 @@
 				<article id="imageEtHistoire">
 					<img src="./media/davidsPresentation0.jpg" alt="image présentation" id="imgPresentation">
 
-					<section>
+					<section id="histoire">
 						<h2>L'histoire de la limonade</h2>
 						<span>
 							Dans les années 50, les enfants des états unis vendaient de la limonade faites maison pour 5 cents sur des stands devant chez eux pour se faire un peu d'argent de poche. 
@@ -181,7 +180,7 @@
 					<form>
 						<div id="tel">
 							<label for="telephone">Téléphone :</label>
-							<input type="number" id="telephone" name="user_tel">
+							<input type="text" id="telephone" name="user_tel">
 						</div>
 
 						<div id="email">
@@ -205,7 +204,7 @@
 						</div>
 
 						<div id="choixEvent">
-							<label>Evenement :</label>
+							<label id="evenement">Evenement :</label>
 							<select id="choix-evenement-list">
 								<option value="Evènement 1">AMAP les Grand’Goules, Grand Poitiers</option>
 								<option value="Evènement 2">AMAP Bio des 2 rives, Civray-de-Touraine</option>
@@ -233,10 +232,14 @@
 
 	<footer>
 		<div id="foot">
-			<a href="https://facebook.com/"><img src="./media/Logo_Facebook.png" alt="logo facebook" class="logoFbEtInsta"></a>
-			<a href="https://instagram.com/"><img src="./media/Logo_Insta.png" alt="logo insta" class="logoFbEtInsta"></a>
-			<a href="https://twitter.com/"><img src="./media/logo_Twitter.png" alt="logo twitter" id="logoT"></a>
-			<a href="http://combava.com/"><p>Combava.com</p></a>
+			<div>
+				<a href="https://facebook.com/"><img src="./media/Logo_Facebook.png" alt="logo facebook" class="logoFbEtInsta"></a>
+				<a href="https://instagram.com/"><img src="./media/Logo_Insta.png" alt="logo insta" class="logoFbEtInsta"></a>
+				<a href="https://twitter.com/"><img src="./media/logo_Twitter.png" alt="logo twitter" id="logoT"></a>
+			</div>
+			<div id="cambava">
+				<a href="http://combava.com/"><p>Combava.com</p></a>
+			</div>
 		</div>
 	</footer>
 </body>
