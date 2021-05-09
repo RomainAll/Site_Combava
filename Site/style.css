@@ -172,6 +172,7 @@ h2{
 
 #evenementEtCarte{
 	display: flex;
+	justify-content:space-between;
 }
 
 .sousItems{
@@ -190,14 +191,18 @@ h2{
 
 }
 #carte{
-	width: 200%;
-	height: 100%;
-	padding-left: 10px;
+	border: solid 4px orange;
+	width: 70%;
+	height: 150%;
+}
+
+#mapResponsive{
+	padding-bottom:75%;
+	position:relative;
 }
 
 iframe{
-	border: solid 4px orange;
-	border-radius: 15px;
+	position:absolute;
 	width: 100%;
 	height: 100%;
 }
