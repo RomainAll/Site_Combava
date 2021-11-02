@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------------------------------------Code CSS Custom PC---------------------------------------------------------------------*/
+
+body{
+	font-family: 'kindergarten',cursive;
+	background-image: url(./media/fond.jpg);
+	
+}
+body>nav{
+	width: 80%;
+	max-width: 1200px;
+	background-color: #FFF;
+	margin: auto;
+
+}
+
+header, footer{
+	color: black;
+}
+
+footer{
+	margin-top: 30px;
+	
+}
+
+main{
+	background-color: #faed27;
+	color: #000;
+	width: 60%;
+	margin: auto;
+	border-radius: 15px
+}
+
+header>div, main>scroll-container>div, footer>div{
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+header img{
+	width: 150px;
+}
+
+nav{
+	float: right;
+	border-bottom: solid 2px rgb(0, 0, 0);
+	width: calc(100% - 400px);
+	text-align: right;
+}
+
+nav>ul>li{
+	display: inline-block;
+	text-align: center;
+	width: 200px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+nav>ul>li>ul>li>a, nav>ul>li>a, footer>div>a {
+	text-decoration: none;
+	color: #000;
+	width: 100%;
+}
+
+nav>ul>li>ul{
+	display: none;
+	position: absolute;
+	background-color: #faed27;
+	font-size: 20px;
+}
+
+nav>ul>li:hover>ul{
+	display: block;
+	text-align: center;
+	border: solid 1px black;
+	width: 239px;
+}
+
+main>scroll-container>div{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+div h1{
+	text-align: center;
+	font-size: 40px;
+	padding-bottom: 30px;
+}
+
+#divPresentation{
+	text-align: justify;
+}
+
+#imgPresentation{
+	width: 40%;
+	margin-right: 20px;
+	border: solid 4px orange;
+	border-radius: 15px;
+	display:flex;
+	flex-direction: column;
+}
+
+#imageEtHistoire{
+	display:flex;
+	align-items:center;
+}
+
+
+#citronnade{
+	padding-top: 30px;
+	padding-bottom: 30px
+	
+}
+
+
+h2{
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+
+
+#evenementEtCarte{
+	display: flex;
+	justify-content:space-between;
+}
+
+.sousItems{
+	padding-left: 30px;
+}
+
+.evenements{
+	padding-bottom: 30px;
+	
+}
+#autresEvenements{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+
+}
+#carte{
+	border: solid 4px orange;
+	width: 70%;
+	height: 150%;
+}
+
+#mapResponsive{
+	padding-bottom:75%;
+	position:relative;
+}
+
+iframe{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+#mesEvenements{
+	float: left;
+}
+
+
+#imgTransition{
+	width:100%;
+}
+
+form{
+	display: flex;
+	justify-content:space-between;
+}
+
+#email, #tel, #nom, #prénom, #choixEvent, #check{
+	margin-bottom: 40px;
+	font-size: 20px;
+	
+}
+
+input{
+	height:20px;
+	border-radius: 15px;
+}
+
+#button{
+	display:block;
+	margin-top: 30px;
+	margin-left: 42%;
+	margin-right: 45%;
+	padding-left:40px;
+	padding-right: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size:medium;
+	font-family: 'kindergarten';
+	background-color:orange;
+	border-radius: 15px;
+}
+
+.logoFbEtInsta{
+	height: 50px;
+	width: 50px;
+}
+
+#logoT{
+	width:50px;
+}
+
+footer>div{
+	margin-left: 21%;
+}
+
+#reseaux>img{
+	margin-right:20px;
+}
+
+#cambava{
+	font-size: 30px;
+	margin-left: 70%;
+
+}
+#cambava>a{
+	text-decoration: none;
+	color: #000;
+}
+select{
+	width:175px;
+	height: 26px;
+	border-radius: 15px;
+	border:solid 2px black;
+}
+/*---------------------------------------------------------------------Telephone---------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+	#imageEtHistoire{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
+
+	#imgPresentation{
+		width: 100%;
+		margin:auto;
+	}
+
+	#histoire{
+		padding-top:10px;
+	}
+
+	#evenementEtCarte{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#carte{
+		border: solid 4px orange;
+		width: 100%;
+		height: 100%;
+	}
+	#mesEvenements{
+		padding-top: 20px;
+	}
+	
+	#autresEvenements{
+		display: block;
+	}
+
+	input{
+		margin:auto;
+	}
+	
+	#button{
+		margin:auto;
+	}
+
+	#foot{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	#reseaux{
+		margin:auto;
+	}
+	#cambava{
+		margin:auto;
+	}
+	#logo{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	h2{
+		text-align:center
+	}
+	main{
+		width: 90%;
+	}
+	form{
+		display:flex;
+		flex-direction:column;
+
+	}
+	nav{
+		display: none;
+	}
+
+}
+/*---------------------------------------------------------------------Tablette---------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width: 1280px){
+
+	#imageEtHistoire{
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+	}
+
+	#imgPresentation{
+		width: 60%;
+		margin:auto;
+	}
+
+	#histoire{
+		padding-top:10px;
+	}
+
+	#evenementEtCarte{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#carte{
+		border: solid 4px orange;
+		width: 100%;
+		height: 100%;
+	}
+	#mesEvenements{
+		padding-top: 0px;
+	}
+
+	#evenementGauche{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 100%;
+	}
+	#autresEvenements{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		width: 100%;
+	}
+
+	input{
+		margin:auto;
+	}
+	
+	#button{
+		margin:auto;
+	}
+
+	#foot{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	#reseaux{
+		margin:auto;
+	}
+	#cambava{
+		margin:auto;
+	}
+	#logo{
+		display:flex;
+		flex-direction:column;
+		margin:auto;
+	}
+	h2{
+		text-align:center
+	}
+	main{
+		width: 90%;
+	}
+	nav{
+		display: none;
+	}
+}
